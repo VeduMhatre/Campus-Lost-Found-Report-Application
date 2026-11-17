@@ -1,0 +1,103 @@
+:root {
+	--teal: #A8C9C8;
+	--white: #FFFFFF;
+	--orange: #F45B0B;
+	--text: #1f2937; /* dark text, needed so the words are readable on white */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: var(--teal);
+	color: var(--text);
+	line-height: 1.6;
+}
+
+.container {
+	width: 90%;
+	max-width: 500px;
+	margin: 40px auto;
+	background: var(--white);
+	border-radius: 16px;
+	padding: 30px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+	text-align: center;
+	color: var(--text);
+	font-size: 26px;
+	margin-bottom: 25px;
+	padding-bottom: 12px;
+	border-bottom: 4px solid var(--orange);
+}
+
+form br {
+	display: none;
+}
+
+label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--text);
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid var(--teal);
+	border-radius: 8px;
+	background: var(--white);
+	color: var(--text);
+	font-size: 15px;
+	font-family: inherit;
+	margin-bottom: 18px;
+	outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: var(--orange);
+}
+
+textarea {
+	resize: vertical;
+}
+
+button {
+	width: 100%;
+	padding: 14px;
+	border: none;
+	border-radius: 8px;
+	background: var(--orange);
+	color: var(--white);
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	filter: brightness(0.92);
+}
+
+button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+#msg {
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: var(--text);
+}

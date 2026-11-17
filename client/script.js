@@ -33,7 +33,7 @@ function sendReport(event){
 		return;
 	}
 
-	let url = "http://localhost:8080/report";
+	let url = "http://3.25.235.85:8080/report";
 
 	let formData = {
 		type: type.value,
