@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Campus Lost and Found</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <h1> Campus Lost and Found</h1>
+        <form id="reportForm" onsubmit="sendReport(event)">
+            <label>I have</label>
+            <select id="type" onChange="toggleKept()">
+                <option value="LOST">Lost an item</option>
+                <option value="FOUND">Found an item</option>
+            </select>
+            <br><br>
+
+            <label>Your Full-Name</label><br>
+            <input type="text" id="name" required>
+            <br><br>
+
+            <label>Your Email</label><br>
+            <input type="email" id="email" required>
+            <br><br>
+
+            <label>Item Name</label><br>
+            <input type="text" id="itemName" required>
+            <br><br>
+
+            <label>Category</label><br>
+		    <select id="category">
+                <option>Wallet</option>
+                <option>Phone</option>
+                <option>ID card</option>
+                <option>Keys</option>
+                <option>Book</option>
+                <option>Files / Documents</option>
+                <option>Accessory</option>
+                <option>Electronic Gadgets</option>
+                <option>Other</option>
+		    </select>
+		    <br><br>
+
+            <label>Place</label><br>
+            <select id="place">
+                    <option>Canteen</option>
+                    <option>Library</option>
+                    <option>Ground</option>
+                    <option>Classroom</option>
+                    <option>Computer Lab</option>
+                    <option>Auditorium</option>
+                    <option>Other</option>
+            </select>
+		    <br><br>       
+
+            <label>Date</label><br>
+            <input type="date" id="date" required>
+            <br><br>
+
+            <div id="keptWrap" hidden>
+                <label>Where is it kept now?</label><br>
+                <input type="text" id="keptAt">
+			    <br><br>
+		    </div>
+
+            <label>Description</label><br>
+		        <textarea id="description" rows="3" cols="30" required></textarea>
+		    <br><br>
+
+            <button type="submit" id="submitBtn">Send report</button>
+        </form>
+
+        <p id="msg"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

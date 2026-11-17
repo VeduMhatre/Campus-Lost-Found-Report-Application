@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Lost and Found report</title>
+</head>
+<body style="margin:0;padding:20px;background:#A8C9C8;font-family:Arial,sans-serif;">
+	
+	<div style="max-width:520px;margin:auto;background:#FFFFFF;border-radius:12px;overflow:hidden;">
+		<div style="background:#F45B0B;color:#FFFFFF;padding:16px 20px;font-size:20px;font-weight:bold;">
+			<span th:text="${type}"></span> item report: <span th:text="${refId}"></span>
+		</div>
+
+		<div style="padding:20px;color:#1f2937;font-size:15px;line-height:1.8;">
+			<p style="margin:0;"><b>Item:</b> <span th:text="${item}"></span></p>
+			<p style="margin:0;"><b>Category:</b> <span th:text="${category}"></span></p>
+			<p style="margin:0;"><b>Place:</b> <span th:text="${place}"></span></p>
+			<p style="margin:0;"><b>Date:</b> <span th:text="${date}"></span></p>
+			<p style="margin:0;" th:if="${type == 'FOUND'}"><b>Kept at:</b> <span th:text="${keptAt}"></span></p>
+			<p style="margin:0;"><b>Description:</b> <span th:text="${description}"></span></p>
+			<hr>
+			<p style="margin:0;"><b>Reported by:</b> <span th:text="${name}"></span> (<span th:text="${email}"></span>)</p>
+		</div>
+	</div>
+</body>
+</html>

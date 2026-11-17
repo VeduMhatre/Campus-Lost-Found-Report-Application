@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Report received</title>
+</head>
+<body style="margin:0;padding:20px;background:#A8C9C8;font-family:Arial,sans-serif;">
+	<div style="max-width:520px;margin:auto;background:#FFFFFF;border-radius:12px;overflow:hidden;">
+		<div style="background:#F45B0B;color:#FFFFFF;padding:16px 20px;font-size:20px;font-weight:bold;">
+			Campus Lost and Found
+		</div>
+		<div style="padding:20px;color:#1f2937;font-size:15px;line-height:1.8;">
+			<p>Hello <span th:text="${name}"></span>,</p>
+			<p>We have received your <b th:text="${type}"></b> report for
+				<b th:text="${item}"></b>.</p>
+			<p>Your reference ID is <b th:text="${refId}"></b>.</p>
+			<p>We will contact you at this email if there is a possible match.</p>
+			<p>Thank you.</p>
+		</div>
+	</div>
+</body>
+</html>
