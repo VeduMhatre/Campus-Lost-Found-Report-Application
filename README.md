@@ -5,7 +5,7 @@ A lightweight, stateless **Java Spring Boot** web application that acts as an au
 ### 📸 Project Screenshots
 
 **1. Frontend Submission Form**
-![Lost and Found Form UI](assets/lost-found-ui.png)
+![Lost and Found Form UI](assets/form2.png)
 
 **2. Received HTML Email Preview**
 ![HTML Email Preview](assets/email-preview.png)
