@@ -2,6 +2,14 @@
 
 A lightweight, stateless **Java Spring Boot** web application that acts as an automated "Form-to-Email" routing system for campus lost and found reports. Designed with **zero database dependencies**, it leverages backend Thymeleaf email templating and Spring Mail to instantly process submissions and dispatch formatted HTML emails.
 
+### 📸 Project Screenshots
+
+**1. Frontend Submission Form**
+![Lost and Found Form UI](assets/lost-found-ui.png)
+
+**2. Received HTML Email Preview**
+![HTML Email Preview](assets/email-preview.png)
+
 ---
 
 ## 🚀 Key Features
